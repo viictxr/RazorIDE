@@ -1,0 +1,20 @@
+<xml>
+	<namespace>
+		<name value="ModPE" />
+		<function>
+			<name value="getMinecraftVersion" />
+			<desc value="Gets the client's current Minecraft PE version." />
+			<syntax value="ModPE.getMinecraftVersion();" />
+			<returns value="string" />
+		</function>
+	</namespace>
+	<namespace>
+		<name value="Player" />
+		<function>
+			<name value="isFlying" />
+			<desc value="Checks if the player is flying or not." />
+			<syntax value="Player.isFlying();" />
+			<returns value="boolean" />
+		</function>
+	</namespace>
+</xml>

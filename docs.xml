@@ -142,47 +142,5 @@
 			<syntax value="Player.isFlying();" />
 			<returns value="boolean" />
 		</function>
-		<function>
-			<name value="name" />
-			<desc value="No information available." />
-			<syntax value="Player.name();" />
-			<returns value="null" />
-		</function>
-		<function>
-			<name value="name" />
-			<desc value="No information available." />
-			<syntax value="Player.name();" />
-			<returns value="null" />
-		</function>
-		<function>
-			<name value="name" />
-			<desc value="No information available." />
-			<syntax value="Player.name();" />
-			<returns value="null" />
-		</function>
-		<function>
-			<name value="name" />
-			<desc value="No information available." />
-			<syntax value="Player.name();" />
-			<returns value="null" />
-		</function>
-		<function>
-			<name value="name" />
-			<desc value="No information available." />
-			<syntax value="Player.name();" />
-			<returns value="null" />
-		</function>
-		<function>
-			<name value="name" />
-			<desc value="No information available." />
-			<syntax value="Player.name();" />
-			<returns value="null" />
-		</function>
-		<function>
-			<name value="name" />
-			<desc value="No information available." />
-			<syntax value="Player.name();" />
-			<returns value="null" />
-		</function>
 	</namespace>
 </xml>

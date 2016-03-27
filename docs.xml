@@ -133,6 +133,18 @@
 			<syntax value="ModPE.getLanguage();" />
 			<returns value="string" />
 		</function>
+		<function>
+			<name value="getBytesFromTexturePack" />
+			<desc value="Gets a byte array from the specified path from the texture pack." />
+			<syntax value="ModPE.getBytesFromTexturePack(path);" />
+			<returns value="ByteArray" />
+		</function>
+		<function>
+			<name value="openInputStreamFromTexturePack" />
+			<desc value="Returns an input stream for the specified path of the texture pack." />
+			<syntax value="ModPE.openInputStreamFromTexturePack(path);" />
+			<returns value="InputStream" />
+		</function>
 	</namespace>
 	<namespace>
 		<name value="Player" />
@@ -141,6 +153,312 @@
 			<desc value="Checks if the player is flying or not." />
 			<syntax value="Player.isFlying();" />
 			<returns value="boolean" />
+		</function>
+		<function>
+			<name value="addExp" />
+			<desc value="Gives the specified amount of exp to the player." />
+			<syntax value="Player.addExp(amount);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="addItemCreativeInv" />
+			<desc value="Adds an item to creative inventory." />
+			<syntax value="Player.addItemCreativeInv(id, count, damage);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="addItemInventory" />
+			<desc value="Adds an item to the player's inventory." />
+			<syntax value="Player.addItemInventory(id,count,damage);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="canFly" />
+			<desc value="Checks if the player can fly or not." />
+			<syntax value="Player.canFly();" />
+			<returns value="boolean" />
+		</function>
+		<function>
+			<name value="clearInventorySlot" />
+			<desc value="Clears the specified inventory slot." />
+			<syntax value="Player.clearInventorySlot(slot);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="enchant" />
+			<desc value="Enchant an item in player's inventory." />
+			<syntax value="Player.enchant(slot, enchantment, level);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="getArmorSlot" />
+			<desc value="Gets the armor in the specified slot." />
+			<syntax value="Player.getArmorSlot(slot);" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getArmorSlotDamage" />
+			<desc value="Gets the armor damage in specified slot." />
+			<syntax value="Player.getArmorSlotDamage(slot);" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getCarriedItem" />
+			<desc value="Gets the item currently in the player's hand." />
+			<syntax value="Player.getCarriedItem();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getCarriedItemCount" />
+			<desc value="Gets the number of items in the players hand." />
+			<syntax value="Player.getCarriedItemCount();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getEntity" />
+			<desc value="Returns the player entity." />
+			<syntax value="Player.getEntity();" />
+			<returns value="entity" />
+		</function>
+		<function>
+			<name value="getInventorySlot" />
+			<desc value="Gets item in the specified inventory slot." />
+			<syntax value="Player.getInventorySlot(slot);" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getInventorySlotCount" />
+			<desc value="Gets the number of items in the specified inventory slot." />
+			<syntax value="Player.getInventorySlotCount(slot);" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getInventorySlotData" />
+			<desc value="Gets the damage value of the item in the specified inventory slot." />
+			<syntax value="Player.getInventorySlotData();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getName" />
+			<desc value="Gets the player's in-game name." />
+			<syntax value="Player.getName(player);" />
+			<returns value="string" />
+		</function>
+		<function>
+			<name value="getSelectedSlotId" />
+			<desc value="Gets the selected inventory slot." />
+			<syntax value="Player.getSelectedSlotId();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getX" />
+			<desc value="Gets player's X position." />
+			<syntax value="Player.getX();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getY" />
+			<desc value="Gets player's Y position." />
+			<syntax value="Player.getY();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getZ" />
+			<desc value="Gets player's Z position." />
+			<syntax value="Player.getZ();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="isPlayer" />
+			<desc value="Checks if the entity is a player." />
+			<syntax value="Player.isPlayer(entity);" />
+			<returns value="boolean" />
+		</function>
+		<function>
+			<name value="setArmorSlot" />
+			<desc value="Sets armor in specified slot." />
+			<syntax value="Player.setArmorSlot(slot,id,damage);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="setHealth" />
+			<desc value="Set player's health." />
+			<syntax value="Player.setHealth(halfHearts);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="setInventorySlot" />
+			<desc value="Sets item in the specified inventory slot." />
+			<syntax value="Player.setInventorySlot(slot, id, count, damage);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="getEnchantments" />
+			<desc value="Returns an array of the enchantments applied to the specified slot." />
+			<syntax value="Player.getEnchantments(slot);" />
+			<returns value="EnchantmentArray" />
+		</function>
+		<function>
+			<name value="getCustomName" />
+			<desc value="Gets the custom name of an item." />
+			<syntax value="Player.getItemCustomName(slot);" />
+			<returns value="string" />
+		</function>
+		<function>
+			<name value="setCustomName" />
+			<desc value="Sets the custom name of an item." />
+			<syntax value="Player.setItemCustomName(slot,name);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="getDimension" />
+			<desc value="Gets the dimension of the player." />
+			<syntax value="Player.getDimension();" />
+			<returns value="DimensionId" />
+		</function>
+		<function>
+			<name value="getExhaustion" />
+			<desc value="Gets the exhaustion of the player." />
+			<syntax value="Player.getExhaustion();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getHunger" />
+			<desc value="Gets the player's hunger level." />
+			<syntax value="Player.getHunger();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getExp" />
+			<desc value="Gets the players exp points." />
+			<syntax value="Player.getExp();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getLevel" />
+			<desc value="Gets the player's exp level." />
+			<syntax value="Player.getLevel();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getSaturation" />
+			<desc value="Gets the player's saturation level." />
+			<syntax value="Player.getSaturation();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="setSaturation" />
+			<desc value="Sets the player's saturation level." />
+			<syntax value="Player.setSaturation(saturation);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="getScore" />
+			<desc value="No information available." />
+			<syntax value="Player.getScore();" />
+			<returns value="integer" />
+		</function>
+			<function>
+			<name value="isFlying" />
+			<desc value="Checks if the player is flying or not." />
+			<syntax value="Player.isFlying();" />
+			<returns value="boolean" />
+		</function>
+		<function>
+			<name value="setCanFly" />
+			<desc value="Sets if the player can fly or not." />
+			<syntax value="Player.setCanFly(canFly);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="setExp" />
+			<desc value="Sets the player's experience points." />
+			<syntax value="Player.setExp(exp);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="setLevel" />
+			<desc value="Sets the player's experience level." />
+			<syntax value="Player.setLevel(level);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="setExhaustion" />
+			<desc value="Sets players exhaustion level." />
+			<syntax value="Player.setExhaustion(exhaustion);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="setHunger" />
+			<desc value="Sets the player's hunger level." />
+			<syntax value="Player.setHunger(hunger);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="setSaturation" />
+			<desc value="No information available." />
+			<syntax value="Player.setSaturation();" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="getPointedBlockId" />
+			<desc value="Gets the id of the block which the player is pointing to." />
+			<syntax value="Player.getPointedBlockId();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getPointedBlockData" />
+			<desc value="Gets the data of the block which the player is pointing to." />
+			<syntax value="Player.getPointedData();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getPointedBlockSide" />
+			<desc value="Gets the side of the block which the player is pointing to." />
+			<syntax value="Player.getPointedBlockSide();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getPointedBlockX" />
+			<desc value="Gets the X position of the block which the player is pointing to." />
+			<syntax value="Player.getPointedBlockX();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getPointedBlockY" />
+			<desc value="Gets the Y position of the block which the player is pointing to." />
+			<syntax value="Player.getPointedBlockY();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getPointedBlockZ" />
+			<desc value="Gets the Z position of the block which the player is pointing to." />
+			<syntax value="Player.getPointedBlockZ();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getPointedEntity" />
+			<desc value="Gets the entity which the player is looking at." />
+			<syntax value="Player.getPointedEntity();" />
+			<returns value="entity" />
+		</function>
+		<function>
+			<name value="getPointedVecX" />
+			<desc value="No information available." />
+			<syntax value="Player.getPointedVecX();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getPointedVecY" />
+			<desc value="No information available." />
+			<syntax value="Player.getPointedVecY();" />
+			<returns value="integer" />
+		</function>
+		<function>
+			<name value="getPointedVecZ" />
+			<desc value="No information available." />
+			<syntax value="Player.getPointedVecZ();" />
+			<returns value="integer" />
 		</function>
 	</namespace>
 </xml>

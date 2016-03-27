@@ -7,6 +7,132 @@
 			<syntax value="ModPE.getMinecraftVersion();" />
 			<returns value="string" />
 		</function>
+		<function>
+			<name value="takeScreenshot" />
+			<desc value="Takes a screenshot and saves it to a file." />
+			<syntax value="ModPE.takeScreenshot(filename);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="log" />
+			<desc value="Logs a value onto the console and android log." />
+			<syntax value="ModPE.log(value);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="langEdit" />
+			<desc value="Edits a value in the MCPE language files." />
+			<syntax value="ModPE.langEdit(name,value);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="leaveGame" />
+			<desc value="Exits the currently open world (if any)." />
+			<syntax value="ModPE.leaveGame();" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="showTipMessage" />
+			<desc value="Shows a tip message on the user's screen." />
+			<syntax value="ModPE.showTipMessage(text);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="resetFov" />
+			<desc value="Resets the field of view to normal." />
+			<syntax value="ModPE.resetFov();" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="resetImages" />
+			<desc value="Resets all images to their defaults." />
+			<syntax value="ModPE.resetImages();" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="readData" />
+			<desc value="Reads a value from the block launcher save data." />
+			<syntax value="ModPE.readData(name);" />
+			<returns value="object" />
+		</function>
+		<function>
+			<name value="removeData" />
+			<desc value="Deletes a value from the block launcher save data." />
+			<syntax value="ModPE.removeData(name);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="saveData" />
+			<desc value="Saves a value to the block launcher save data." />
+			<syntax value="ModPE.saveData(name, value);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="selectLevel" />
+			<desc value="Enter a world with the specified details." />
+			<syntax value="ModPE.selectLevel(levelDir, levelName, levelSeed, gamemode);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="setCamera" />
+			<desc value="Sets the camera to that of an entity." />
+			<syntax value="ModPE.setCamera(entity);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="joinServer" />
+			<desc value="Join a server with the specified ip and port." />
+			<syntax value="ModPE.joinServer(ip,port);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="overrideTexture" />
+			<desc value="Replaces a texture with an image from the URL." />
+			<syntax value="ModPE.overrideTexture(url, texture);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="setGameSpeed" />
+			<desc value="Sets the gamespeed in ticks." />
+			<syntax value="ModPE.setGameSpeed(ticks_per_second);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="setItems" />
+			<desc value="No information available." />
+			<syntax value="ModPE.setItems(url);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="setTerrain" />
+			<desc value="No information available." />
+			<syntax value="ModPE.setTerrain(url);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="setGuiBlocks" />
+			<desc value="No information available." />
+			<syntax value="ModPE.setGuiBlocks(url);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="setItem" />
+			<desc value="Defines a new item with the specified properties." />
+			<syntax value="ModPE.setItem(id, iconName, iconSubindex, name, maxStack);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="setFoodItem" />
+			<desc value="Defines a new item with the specified properties." />
+			<syntax value="ModPE.setFoodItem(id, iconName, iconSubindex, halfHearts, name, maxStack);" />
+			<returns value="null" />
+		</function>
+		<function>
+			<name value="getLanguage" />
+			<desc value="Gets the user's currently selected language." />
+			<syntax value="ModPE.getLanguage();" />
+			<returns value="string" />
+		</function>
 	</namespace>
 	<namespace>
 		<name value="Player" />
